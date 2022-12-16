@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen.SplashActivity">
+
+    <TextView
+        android:id="@+id/bus_exchang"
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="346dp"
+        android:gravity="top"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/bus_exchang"
+        android:textAppearance="@style/bus_exchang"
+        android:translationY="-4.8sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="309dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

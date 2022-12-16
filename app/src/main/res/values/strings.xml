@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BuxApp</string>
+    <string name="title">Hello John,\nLooking for a trip?</string>
+    <string name="bus_exchang">bus exchange</string>
+</resources>

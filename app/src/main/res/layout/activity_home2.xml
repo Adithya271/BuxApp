@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage.HomeActivity2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#512da8"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="imgBackToHome1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Bux"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bus_image" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Select your bus!"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="45"
+                            android:text="Medan"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_swap_horiz" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="45"
+                            android:text="Pekanbaru"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout"
+                        android:layout_marginTop="8dp"
+                        android:text="20th - Jul - 2023 | Friday"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-44dp"
+                    android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="16dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#A39D9D"
+                        android:alpha="0.9"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Rp.166.000,00"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/purple_500"
+                        android:layout_marginTop="190dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="210dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="/seat"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_marginTop="190dp"
+                        android:layout_marginLeft="235dp"
+                        android:text="Book Now"
+                        android:textColor="@color/white"
+                        android:onClick="btnToHome3"
+                        android:textSize="12sp"
+                        android:background="@drawable/my_button_1"
+                        android:backgroundTint="@color/purple_500"
+                        android:layout_height="40dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="60"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sempati Star"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/purple_500"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="P 1923 NM"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="17:35"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:text="Terminal Amplas Medan"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="-\n-\n-"
+                                android:textColor="#A39D9D"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="09:10"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black" />
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:text="Terminal Bandaraya Riau"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="40"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="55dp"
+                                android:layout_marginTop="5dp"
+                                android:backgroundTint="#FFC71F"
+                                app:cardCornerRadius="6dp"
+                                android:layout_marginLeft="80dp"
+                                android:layout_height="55dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" *\n 4.9/5"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="120 Reviews"
+                                android:layout_marginLeft="80dp"
+                                android:textAlignment="textEnd"
+                                android:textColor="#b3b3b3" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="16dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#A39D9D"
+                        android:alpha="0.9"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Rp.90.000,00"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/purple_500"
+                        android:layout_marginTop="190dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="210dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="/seat"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_marginTop="190dp"
+                        android:layout_marginLeft="235dp"
+                        android:text="Book Now"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:background="@drawable/my_button_1"
+                        android:backgroundTint="@color/purple_500"
+                        android:layout_height="40dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="60"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pahala Kencana"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/purple_500"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="P 1922 NM"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="02:30"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:text="Terminal Amplas Medan"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="-\n-\n-"
+                                android:textColor="#A39D9D"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="05:20"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black" />
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:text="Terminal Bandaraya Riau"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="40"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="55dp"
+                                android:layout_marginTop="5dp"
+                                android:backgroundTint="#FFC71F"
+                                app:cardCornerRadius="6dp"
+                                android:layout_marginLeft="80dp"
+                                android:layout_height="55dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" *\n 4.0/5"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="120 Reviews"
+                                android:layout_marginLeft="80dp"
+                                android:textAlignment="textEnd"
+                                android:textColor="#b3b3b3" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="16dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#A39D9D"
+                        android:alpha="0.9"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Rp.80.000,00"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/purple_500"
+                        android:layout_marginTop="190dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="210dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="/seat"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_marginTop="190dp"
+                        android:layout_marginLeft="235dp"
+                        android:text="Book Now"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:background="@drawable/my_button_1"
+                        android:backgroundTint="@color/purple_500"
+                        android:layout_height="40dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="60"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pahala Kencana"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/purple_500"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="P 1922 NM"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="09:30"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:text="Terminal Amplas Medan"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="-\n-\n-"
+                                android:textColor="#A39D9D"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12:20"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black" />
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:text="Terminal Bandaraya Riau"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="40"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="55dp"
+                                android:layout_marginTop="5dp"
+                                android:backgroundTint="#FFC71F"
+                                app:cardCornerRadius="6dp"
+                                android:layout_marginLeft="80dp"
+                                android:layout_height="55dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" *\n 4.3/5"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="100 Reviews"
+                                android:layout_marginLeft="80dp"
+                                android:textAlignment="textEnd"
+                                android:textColor="#b3b3b3" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

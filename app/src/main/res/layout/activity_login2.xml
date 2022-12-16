@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity2">
+
+    <TextView
+        android:id="@+id/TVtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="30dp"
+        android:text="Almost There"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TVbelowtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVtitle"
+        android:paddingLeft="30dp"
+        android:text="Fill your phone number below,so we can really catch you up." />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="234dp"
+        android:layout_height="235dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/phonelook" />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="30dp"
+        android:text="Phone number" />
+
+    <LinearLayout
+        android:id="@+id/button1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/TV2"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/my_button_1"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/hp" />
+
+        <EditText
+            android:id="@+id/textView2"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="phone"
+            android:hint="Your phone number here"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/my_button_1"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="btnToLogin3"
+        android:text="SAVE NUMBER" />
+</RelativeLayout>
